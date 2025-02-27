@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/laneburly/static/css/main.ea8a08d3.css",
+    "main.js": "/laneburly/static/js/main.3fb551d3.js",
+    "index.html": "/laneburly/index.html",
+    "main.ea8a08d3.css.map": "/laneburly/static/css/main.ea8a08d3.css.map",
+    "main.3fb551d3.js.map": "/laneburly/static/js/main.3fb551d3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ea8a08d3.css",
+    "static/js/main.3fb551d3.js"
+  ]
+}
