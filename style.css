@@ -1,0 +1,181 @@
+/* Global Font Settings */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  h1, h2, h3, h4, .navbar-brand-laneburly {
+    font-family: 'Playfair Display', serif;
+  }
+  
+  /* Navbar brand styling */
+  .navbar-brand-laneburly {
+    font-size: 1.75rem;
+    letter-spacing: 1px;
+  }
+  
+  /* Title for sections (e.g., "What to Wear Now", "Shop Instagram") */
+  .section-title {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    letter-spacing: 1px;
+    font-weight: 400;
+  }
+  
+  /* HERO BANNER */
+  .hero-banner {
+    min-height: 80vh;
+    width: 100%;
+    background: url("images/hero.jpg") center/cover no-repeat;
+    position: relative;
+    padding-left: 4rem; /* left alignment & spacing */
+  }
+  .hero-banner::before {
+    /* overlay */
+    content: "";
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.2);
+  }
+  .hero-content {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    color: #fff;
+    margin-left: 0; /* We'll rely on .hero-banner padding */
+    padding: 2rem 0; /* top/bottom spacing */
+  }
+  .hero-content h1 {
+    font-size: 3rem;
+    letter-spacing: 1px;
+    font-weight: normal;
+    margin-bottom: 1rem;
+  }
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 1.5rem;
+  }
+  .hero-content button {
+    border-radius: 0;
+    letter-spacing: 0.5px;
+    padding: 0.75rem 1.5rem;
+  }
+  
+  /* Responsive breakpoints for hero */
+  @media (max-width: 992px) {
+    .hero-banner {
+      padding-left: 2rem;
+    }
+  }
+  @media (max-width: 768px) {
+    .hero-banner {
+      min-height: 60vh;
+    }
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+    .hero-content p {
+      font-size: 1rem;
+    }
+  }
+  @media (max-width: 576px) {
+    .hero-banner {
+      min-height: 50vh;
+      padding-left: 1rem;
+    }
+    .hero-content h1 {
+      font-size: 1.6rem;
+    }
+  }
+  
+  /* CATEGORY ROW */
+  .category-tile {
+    position: relative;
+    overflow: hidden;
+  }
+  .category-tile img {
+    width: 100%;
+    display: block;
+  }
+  .category-tile h3 {
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    margin: 0;
+    color: #fff;
+  }
+  /* Hover darken effect */
+  .category-tile:hover img {
+    filter: brightness(75%);
+    transition: filter 0.3s;
+  }
+  
+  /* PRODUCT SECTION: Cards & Hover */
+  .product-card {
+    transition: transform 0.3s ease;
+  }
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  .product-card:hover img {
+    transform: scale(1.03);
+    transition: transform 0.3s ease;
+  }
+  /* Color circles hidden by default */
+  .product-colors {
+    display: none;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+  .product-card:hover .product-colors {
+    display: flex;
+  }
+  .color-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  .color-circle:hover {
+    transform: scale(1.1);
+  }
+  
+  /* INFO SECTION */
+  .info-section {
+    font-family: 'Playfair Display', serif;
+    max-width: 800px;
+    margin: auto;
+    padding: 0 1rem;
+  }
+  .info-section .info-text {
+    font-style: italic;
+    color: #555;
+    line-height: 1.8;
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  /* SHOP INSTAGRAM */
+  .shop-instagram img {
+    width: 100%;
+    display: block;
+  }
+  
+  /* FOOTER tweaks */
+  footer ul {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  footer ul li {
+    margin-bottom: 0.5rem;
+  }
+  footer a {
+    text-decoration: none;
+    color: #000;
+  }
+  footer a:hover {
+    text-decoration: underline;
+  }
+  
