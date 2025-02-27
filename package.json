@@ -2,6 +2,7 @@
   "name": "s59-s67",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://lansvee.github.io/LaneBurly",
   "dependencies": {
     "bootstrap": "^5.3.3",
     "cra-template": "1.2.0",
@@ -16,6 +17,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
@@ -38,6 +41,7 @@
     ]
   },
   "devDependencies": {
-    "@testing-library/react": "^16.2.0"
+    "@testing-library/react": "^16.2.0",
+    "gh-pages": "^5.0.0"
   }
 }
