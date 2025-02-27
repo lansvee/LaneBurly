@@ -1,0 +1,42 @@
+/* Subtle hover lift */
+.product-card {
+    transition: transform 0.3s ease;
+  }
+  
+  .product-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Image zoom on hover */
+  .product-card:hover img {
+    transform: scale(1.03);
+    transition: transform 0.3s ease;
+  }
+  
+  /* By default, hide the color circles container */
+  .product-colors {
+    display: none;
+    margin-bottom: 1rem; /* space under the color swatches */
+  }
+  
+  /* On hover, show the color swatches */
+  .product-card:hover .product-colors {
+    display: flex;
+    gap: 0.5rem; /* spacing between each circle */
+  }
+  
+  /* Style each color circle */
+  .color-circle {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  /* Optional: scale the color circle on hover */
+  .color-circle:hover {
+    transform: scale(1.1);
+  }
+  

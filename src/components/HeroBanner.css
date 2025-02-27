@@ -1,0 +1,46 @@
+/* src/components/HeroBanner.css */
+
+.hero-banner {
+    display: flex;
+    justify-content: flex-start;   /* Left-aligned content */
+    align-items: center;
+    padding-left: 4rem;           /* Added left padding for nice spacing */
+    position: relative;
+  }
+  
+  /* Larger screens */
+  @media (min-width: 992px) {
+    .hero-banner {
+      padding-left: 6rem;         /* More left padding on big desktops */
+    }
+  }
+  
+  /* Tablet and down adjustments */
+  @media (max-width: 768px) {
+    .hero-banner {
+      min-height: 60vh;
+      padding-left: 2rem;         /* Reduce padding on smaller screens */
+    }
+  
+    .hero-content h1 {
+      font-size: 2rem;
+    }
+  
+    .hero-content p {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Phone adjustments */
+  @media (max-width: 576px) {
+    .hero-banner {
+      min-height: 50vh;
+      padding-left: 1rem;         /* Minimal padding on phones */
+    }
+  
+    .hero-content h1 {
+      font-size: 1.6rem;
+      letter-spacing: 0.5px;
+    }
+  }
+  
